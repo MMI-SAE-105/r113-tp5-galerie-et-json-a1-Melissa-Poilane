@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body x-data="{maVar:'https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?q=80&w=934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}">
+<body x-data="{maVar:'https://picsum.photos/id/60/667/467'}">
     <h1>Galerie</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et porro impedit unde nesciunt cumque iusto optio nobis non natus eaque reprehenderit distinctio voluptatibus alias deleniti cum neque, nostrum ducimus?</p>
+
+<img src="https://picsum.photos/id/60/267/167"" alt="photo de toutou" @click="maVar='https://picsum.photos/id/60/667/467'">
+
+<img src="https://picsum.photos/id/61/267/167"" alt="photo de toutou" @click="maVar='https://picsum.photos/id/61/667/467'">
+
 <div class="overlay" x-show="maVar" @click="maVar=null" @keyup.escape.window="maVar=null">
-    <figure><img :src="maVar" alt="image d'hiver">
+    <figure>
+        <img :src="maVar" alt="image d'hiver">
     </figure>
     
 </div>
@@ -19,7 +25,6 @@
 </body>
 </html>
  
-
 
 
 
