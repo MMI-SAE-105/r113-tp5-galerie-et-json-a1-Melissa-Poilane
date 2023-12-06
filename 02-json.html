@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 
@@ -18,8 +19,8 @@
         }">
         <template x-for="obj of données">
             <li>
-                <span x-text="obj.nom">nom</span> :
-                <a :href="obj.url" x-text="obj.projet">projet</a>
+                <span x-text="obj.nom">nom</span>&nbsp; &rarr;&nbsp;
+                <a :href="obj.url" x-text="obj.projet">projet </a>
             </li>
         </template>
     </ul>

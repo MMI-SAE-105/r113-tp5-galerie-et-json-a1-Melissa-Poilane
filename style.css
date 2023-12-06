@@ -41,3 +41,43 @@
     max-width: 100%;
     height: auto;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Rubik+Bubbles&display=swap');
+
+body {
+    background-color: #DC9170;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Rubik Bubbles', sans-serif;
+    font-size: 3rem;
+    color: #231F26;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+ul {
+    background-color: #231F26;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+a,
+span {
+    color: #A19FA2;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+li {
+    color: #A19FA2;
+    list-style-type: none;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
