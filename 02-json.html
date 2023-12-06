@@ -11,23 +11,10 @@
 <body>
     <h1>JSON</h1>
     <ul x-data="{
-        données: [ 
-            { 
-             nom:'jean',
-             projet: 'Alpine.js',
-             url: 'https://alpinejs.dev/'
-            },
-           { 
-            nom: 'maxime', 
-            projet: 'tailwind CSS', 
-            url: 'https://tailwindcss.com/'
-           },
-           { 
-            nom: 'adam', 
-            projet: 'laravel',
-            url: 'https://laravel.com'
-           }
-        ]
+        async données() {
+            const resp = await fetch('data.json');
+            return await resp.json();
+        }
         }">
         <template x-for="obj of données">
             <li>
