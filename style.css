@@ -35,11 +35,26 @@
     margin: 0;
     padding: 1rem;
     border: 2px solid white;
+    border-radius: 18px;
 }
 
 .overlay>figure>img {
     max-width: 100%;
     height: auto;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.image {
+    display: block;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Rubik+Bubbles&display=swap');
